@@ -154,7 +154,7 @@ I use LeNet as my model but modified 2 parts.
 
 ####1. Choose five German traffic signs found on the web and provide them in the report. For each image, discuss what quality or qualities might be difficult to classify.
 
-I have got 12 images from the internet. The first 6 images have better resolution, and the rest of the images are taken screenshot from driving recorder videos about German road on YouTube.
+The images from 1 to 6 are got from web with better resolution to make sure that this model is working. And the rest of the images are taken screenshot from driving recorder videos about German road on YouTube. The images 7, 8, 9, 11 are taken at night environment, all of them with a little blurry, because the car is moving. I thought image 7 and 9 might have the highest possibility to get the wrong result, it is not easy to recognize with blurriness. Image 10 and 12 are taken with daylight environment and image 12 is a little reflective.
 
 ![alt text][image11] ![alt text][image12] ![alt text][image13]
 ![alt text][image14] ![alt text][image15] ![alt text][image16]
@@ -182,7 +182,7 @@ Here are the results of the prediction:
 | Vehicles over 3.5 metric tons prohibited | Vehicles over 3.5 metric tons prohibited |
 
 
-The model was able to correctly guess 12 of the 12 traffic signs, which gives an accuracy of 100%.
+The model was able to correctly guess 12 of the 12 traffic signs, which gives an accuracy of 100%. However, it's just because all of the new images I found is suited for this model. In this model, the test set accuracy is about 0.94. Therefore, it still has some traffic sign cannot be recognized by this model. If I collect more not easily classified images to predict by this model, I believe that the accuracy will achieve to test dataset accuracy.
 
 ####3. Describe how certain the model is when predicting on each of the five new images by looking at the softmax probabilities for each prediction. Provide the top 5 softmax probabilities for each image along with the sign type of each probability. (OPTIONAL: as described in the "Stand Out Suggestions" part of the rubric, visualizations can also be provided such as bar charts)
 
